@@ -20,6 +20,6 @@ from bookmark.views import BookmarkLV, BookmarkDV
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('bookmark/', BookmarkLV_as.view(), name='index'),
-    path('bookmark/<int:pk>/', BookmarkDV_as.view(), name='detail'),
+    path('bookmark/', BookmarkLV.as_view(), name='index'),
+    path('bookmark/<int:pk>/', BookmarkDV.as_view(), name='detail'),
 ]
